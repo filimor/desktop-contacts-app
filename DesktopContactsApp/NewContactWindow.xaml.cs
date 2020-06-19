@@ -1,7 +1,5 @@
 ﻿using DesktopContactsApp.Classes;
 using SQLite;
-using System;
-using System.IO;
 using System.Windows;
 
 namespace DesktopContactsApp
@@ -26,8 +24,6 @@ namespace DesktopContactsApp
                 Email = emailTextBox.Text,
                 Phone = phoneNumber.Text
             };
-
-            
 
             using (var connection = new SQLiteConnection(App.databasePath))
             {
